@@ -1,0 +1,11 @@
+@Test- Identifies a method as a test method.
+@BeforeEach- Executed before each test. Used to prepare the test environment, e.g., initialize the fields in the test class, configure the environment, etc.
+@AfterEach- Executed after each test. Used to cleanup the test environment, e.g., delete temporary data, restore defaults, cleanup expensive memory structures.
+@DisplayName("<Name>")- <Name> that will be displayed by the test runner. In contrast to method names the DisplayName can contain spaces.
+@RepeatedTest(<Number>)- Similar to @Test but repeats the test a <Number> of times
+@BeforeAll- Executed once, before the start of all tests. It is used to perform time intensive activities, for example, to connect to a database. Methods marked with this annotation need to be defined as static to work with JUnit.
+@AfterAll- Executed once, after all tests have been finished. It is used to perform clean-up activities, for example, to disconnect from a database. Methods annotated with this annotation need to be defined as static to work with JUnit.
+@TestFactory- Method is a Factory for dynamic tests
+@Nested- Lets you nest inner test classes to force a certain execution order
+@Tag("<TagName>")- Tests in JUnit 5 can be filtered by tag. Eg., run only tests tagged with "fast".
+@ExtendWith- Lets you register an Extension class that integrates with one or more extension points
